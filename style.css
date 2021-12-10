@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 3000px;
+}
+
+/* Header */
+.header{
+    background: url('images/desktop/image-header.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    background: #3dbeff;
+    text-transform: capitalize;
+}
+
+.nav-wrapper ul li:nth-child(4){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6fd0fb;
+    border-radius: 30px;
+    height: 40px;
+    width: auto;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+.header h1{
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+/* Closed Header */
+
+.section1, .section2, .section2{
+    display: flex;
+    flex-direction: column;
+}
+
+.section1Text{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    margin-top: 350px;
+}
+
+.section1Text h1{
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.section1Text a{
+    margin-top: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    border-bottom: 2px solid #8d844d;
+    width: 90px;
+}
+
+.section1Img img, .section2Img img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Akhir Section 1 */
+.section2{
+    margin-top: -5px;
+}
+
+.section2Img img{
+    margin-top: 350px;
+}
+
+.section2Text{
+    margin-top: 700px;
+}
+
+/* Section 3 */
+.section3{
+    margin-top:350px;
+}
+
+.sec1{
+    background: url('images/mobile/image-graphic-design.jpg');
+    max-width: 675px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    text-align: center;
+    background-position: center;
+    object-fit: cover;
+    height: 500px;
+}
+
+.sec1 h1{
+    margin-bottom: 20px;
+}
+
+.sec2{
+    background: url('images/mobile/image-photography.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+    background-position: center;
+    object-fit: cover;
+}
+
+.sec2 h1{
+    margin-bottom: 20px;
+}
+
+/* Akhir section3 */
+/* Testi */
+.testimony h1{
+    text-align: center;
+    margin-top: 40px;
+    color: #a8a9ab;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.testi{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.testi ul{
+    list-style: none;
+}
+
+.testi ul li:nth-child(2){
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.testi ul li:nth-child(3){
+    font-weight: bold;
+}
+
+.testi ul li:nth-child(4){
+    color: #a8a9ab;
+}
+
+.testi img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Gallery */
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 90px;
+}
+
+.gallery img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.footer{
+    background: #90d4c5;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.footer ul li{
+    margin-right: 30px;
+    color: #377e70;
+}
+
+.footer ul li:hover{
+    margin-right: 30px;
+    color: #fff;
+}
+
+
+
+@media(min-width:992px){
+    .section1, .section2, .section3{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section1Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px;
+        position: relative;
+        margin-top: auto;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .section1Img img, .section2Img img{
+        width: 675px;
+        height: auto;
+    }
+
+    /* Section2 */
+    .section2Img img{
+        margin-top: auto;
+    }
+
+    .section2Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px;
+        position: relative;
+        margin-top: auto;
+        text-align: left;
+        justify-content: center;
+    }
+
+    /* Section 3 */
+.section3{
+    margin-top: -5px;
+}
+
+.sec1{
+    background: url('images/desktop/image-graphic-design.jpg');
+    max-width: 675px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 100px;
+    text-align: center;
+}
+
+.sec1 h1{
+    margin-bottom: 20px;
+}
+
+.sec2{
+    background: url('images/desktop/image-photography.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 100px;
+    text-align: center;
+}
+
+.sec2 h1{
+    margin-bottom: 20px;
+}
+
+/* Testi */
+.testi{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/* footer */
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 90px;
+}
+}
